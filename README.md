@@ -1,59 +1,112 @@
-# Character Calculator
+# Character Calculator & Converter
 
-## Overview
-This is a simple Python program that allows users to count characters, spaces, and words in a text, as well as search for specific letters. Users can either type their text manually or load a `.txt` file.
+## Description
+The **Character Calculator & Converter** is a text-processing tool that allows users to load or type text, count characters, words, spaces, and chosen letters, and convert the text into different cases. The tool provides a user-friendly command-line interface and various features to manipulate text efficiently.
 
 ## Features
-1. **Count Characters:** Counts the number of each character in the text and prints them in a sorted way.
-2. **Count Spaces:** Counts how many spaces are in the text.
-3. **Count Words:** Counts how many times each word appears in the text and prints them in a sorted way.
-4. **Count Chosen Letters:** Allows users to count specific letters of their choice in the text, and it prints them in a sorted way.
-5. **Load New Text:** Users can type new text or load a new text file without exiting the application.
+1. **Text Counting:**
+   - Count all characters.
+   - Count spaces.
+   - Count words.
+   - Count user-selected letters.
+   - Calculate frequencies of options above. (change here)
 
+
+2. **Text Conversion:**
+   - Sentence case.
+   - lower case or UPPER CASE.
+   - Capitalized Case.
+   - aLErNaTiNg CaSe.
+   - InVeRsE cAsE.
+   - Title Case (APA style).
+
+
+3. **File Operations:**
+   - Load a `.txt` file or type text directly.
+   - Download the processed output as a `.txt` file.
+   - Copy the text and the processed output to the clipboard.
+   - Clear the current text and output.
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/code-freq/character-calculator-converter.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install pyperclip tkinter
+   ```
+   
 ## Usage
-1. Clone or download the repository to your local machine.
-    ```bash
-    git clone https://github.com/code-freq/character-calculator.git
-    ```
-2. Make sure you have **Python 3.x** installed.
-3. Install `tkinter` (if not already installed) using the command:
-    ```bash
-    pip install tk
-    ```
-4. Run the program (main.py)
-5. Follow the on-screen prompts
+1. Launch the script by opening `main.py` on your IDE
+2. Follow the on-screen instructions to input your text, choose counting options, or convert the text into different cases.
 
 ## Example
 Here's an example of what you might see in the program:
-```bash
----------------- Simple Character Calculator ----------------
+```
+---------------- Character Calculator & Converter ----------------
 Would you like to type now, or load a .txt file? (type/load): type
-Your text: Hello World
-
+Your text: Hello world, hello again!
+--------- Count ---------
 Count Characters (1)
 Count Spaces (2)
 Count Words (3)
 Count Chosen Letters (4)
-Type/Load New Text (5)
+-------- Convert --------
+Sentence case (5)
+lower case (6)
+UPPER CASE (7)
+Capitalized Case (8)
+aLtErNaTiNg cAsE (9)
+Title Case (10)
+InVeRsE CaSe (11)
+--------- File ---------
+Type/Load New Text (new)
+Download Text (download)
+Copy to Clipboard (copy)
+Clear Text and Output (clear)
 Exit Application (exit)
 
 Choose Process: 1
------------ Numbers of Characters -----------
-l - 3
-o - 2
-space - 1
-H - 1
-e - 1
-W - 1
-r - 1
-d - 1
+
+l - 5 | Freq: 20.0%
+o - 3 | Freq: 12.0%
+space - 3 | Freq: 12.0%
+e - 2 | Freq: 8.0%
+a - 2 | Freq: 8.0%
+H - 1 | Freq: 4.0%
+w - 1 | Freq: 4.0%
+r - 1 | Freq: 4.0%
+d - 1 | Freq: 4.0%
+, - 1 | Freq: 4.0%
+h - 1 | Freq: 4.0%
+g - 1 | Freq: 4.0%
+i - 1 | Freq: 4.0%
+n - 1 | Freq: 4.0%
+! - 1 | Freq: 4.0%
+Total 25 characters found.
+
+(Numbers of Characters)
+
+Choose Process: 11
+
+HeLlO wOrLd, HeLlO aGaIn!
+(Inverse Case)
+
+Choose Process: exit
+Exiting the application..
+
+Process finished with exit code 0
 ```
 
 ## Dependencies
-- **tkinter:**  Used to open a file dialog and load `.txt` files.
+- Python 3.6 or later.
+- `pyperclip` for clipboard operations
+- `tkinter` for file dialog operations.
 
 > [!NOTE]
 > Make sure that your text files are UTF-8 encoded for proper reading.
+> 
 > If the file is not found or cannot be opened, an appropriate error message will be shown.
 
 ## Contact

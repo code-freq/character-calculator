@@ -9,7 +9,7 @@ The **Character Calculator & Converter** is a text-processing tool that allows u
    - Count spaces.
    - Count words.
    - Count user-selected letters.
-   - Calculate frequencies of options above. (change here)
+   - Calculate frequencies of options above.
 
 
 2. **Text Conversion:**

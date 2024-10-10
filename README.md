@@ -38,7 +38,7 @@ The **Character Calculator & Converter** is a text-processing tool that allows u
    ```
    
 ## Usage
-1. Launch the script by opening `main.py` on your IDE
+1. Launch the script by opening `main.py` on your IDE.
 2. Follow the on-screen instructions to input your text, choose counting options, or convert the text into different cases.
 
 ## Example

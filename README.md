@@ -34,7 +34,7 @@ The **Character Calculator & Converter** is a text-processing tool that allows u
    ```
 2. Install the required dependencies:
    ```bash
-   pip install pyperclip tkinter
+   pip install pyperclip tk
    ```
    
 ## Usage
